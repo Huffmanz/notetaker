@@ -17,7 +17,7 @@ export const Header = () => {
                                onClick={() => void signOut()}
                         >
                             <div className="w-10 rounded-ful">
-                                <img src={sessionData?.user?.image} alt={sessionData?.user?.name} />
+                                <img src={sessionData.user.image ? sessionData.user.image : ""} alt={sessionData?.user?.name ? sessionData?.user?.name : ""} />
                             </div>    
                         </label>
                     ): (
